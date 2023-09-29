@@ -1,0 +1,31 @@
+bdpw3
+
+create table tbProduto(
+	idProduto int primary key auto_increment,
+	produto varchar(40),
+	descrProduto varchar(200),
+	valor float,
+	dtCadastro date
+); 
+
+insert into tbProduto values(
+	null, 'Coca-cola','refrigerante de cola',7,'2023-09-21'
+);
+
+insert into tbProduto values(
+	null, 'Hot Dog','lanche',10,'2023-09-21'
+);
+
+insert into tbProduto values(
+	null, 'batata frita','industrializada',15,'2023-09-21'
+);
+
+-------------------
+
+Criar projeto no laravel
+
+composer create-project laravel/laravel projeto-aula
+
+php artisan make:model Produto
+
+php artisan make:controller ProdutoController --resource
